@@ -53,3 +53,30 @@ Scenario Outline: It prints the integer
     | 13     |
     | 14     |
     | 254221 |
+
+Scenario Outline: It prints a range of numbers
+    Given an <infimum> and <supremum> range
+    When we produce a sequence
+    Then an output is produced for each number in that sequence
+
+    Examples: Ranges
+    | infimum | supremum |
+    | 0       | 10       |
+    | 10      | 100      |
+    | 100     | 10000    |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

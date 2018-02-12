@@ -16,6 +16,6 @@ class FizzBuzz:
             return str(number)
 
     @staticmethod
-    def produce_sequence(infimum, supremum, produce_output=produce_output, range=range):
+    def produce_sequence(infimum, supremum):
         for number in range(infimum, supremum):
-            yield produce_output(number)
+            yield FizzBuzz.produce_output(number)
