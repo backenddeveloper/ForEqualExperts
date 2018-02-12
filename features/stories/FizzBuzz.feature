@@ -43,7 +43,7 @@ Scenario Outline: It prints the integer
     Given a <number> that doesn't divide by 2, 5 or 15
     Then the output <number> is displayed
 
-    Examples: numbers that  don't divide by 3, 5 or 15
+    Examples: numbers that don't divide by 3, 5 or 15
     | number |
     | 2      |
     | 4      |
@@ -64,19 +64,3 @@ Scenario Outline: It prints a range of numbers
     | 0       | 10       |
     | 10      | 100      |
     | 100     | 10000    |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
