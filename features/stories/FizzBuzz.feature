@@ -3,13 +3,25 @@ Feature: The FizzBuzz program
     To Equal Experts
     In preperation for technical interview
 
+Scenario Outline: It prints Lucky
+    Given a <number> that contains a 3
+    Then the output Lucky is displayed
+
+    Examples: numbers that contain a 3
+    | number |
+    | 3      |
+    | 13     |
+    | 23     |
+    | 30     |
+    | 31     |
+    | 254223 |
+
 Scenario Outline: It prints Fizz
     Given a <number> that divides by 3
     Then the output Fizz is displayed
 
     Examples: numbers that divide by 3
     | number |
-    | 3      |
     | 6      |
     | 9      |
     | 12     |
@@ -35,8 +47,8 @@ Scenario Outline: It prints FizzBuzz
     Examples: numbers that divide by 15
     | number |
     | 15     |
-    | 30     |
     | 45     |
+    | 60     |
     | 254220 |
 
 Scenario Outline: It prints the integer
@@ -50,7 +62,6 @@ Scenario Outline: It prints the integer
     | 7      |
     | 8      |
     | 11     |
-    | 13     |
     | 14     |
     | 254221 |
 

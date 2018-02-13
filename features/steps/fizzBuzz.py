@@ -12,6 +12,11 @@ def step_impl(context, number):
     context.number = number
 
 
+@given(u'a {number:d} that contains a 3')
+def step_impl(context, number):
+    context.number = number
+
+
 @given(u'an {infimum:d} and {supremum:d} range')
 def step_impl(context, infimum, supremum):
     context.infimum = infimum

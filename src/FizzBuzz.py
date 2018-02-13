@@ -1,12 +1,16 @@
 #!/usr/bin/env python3.6
 
+import re
+
 
 class FizzBuzz:
 
     @staticmethod
     def produce_output(number: int) -> str:
 
-        if number % 15 == 0:
+        if re.match('.*3.*', str(number)):
+            return 'Lucky'
+        elif number % 15 == 0:
             return 'FizzBuzz'
         elif number % 3 == 0:
             return 'Fizz'
