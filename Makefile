@@ -18,3 +18,9 @@ step2:
 	make test
 	zip -r step2.zip *
 	git checkout master
+
+step3: 
+	git checkout tags/step3
+	make test
+	zip -r step3.zip *
+	git checkout master
