@@ -45,4 +45,4 @@ def step_impl(context):
 
 @then(u'the number of {key:w} produced is {value:d}')
 def step_impl(context, key, value):
-    assert context.report.get(key) == value
+    assert context.report.total()[key] == value
